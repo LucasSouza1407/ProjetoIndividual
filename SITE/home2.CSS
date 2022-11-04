@@ -1,0 +1,60 @@
+/* body */
+.body {
+    background-color: #32b9cd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 700px;
+    height: 2000px;
+    background-color: black;
+}
+/* imagem navbar */
+.navbar {
+        display: flex;
+        justify-items: auto;
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        border-bottom: solid 3px red;
+        background-color: black;
+        top: 0;
+        left: 0;
+}
+
+.caixa {
+    display: flex;
+        justify-items: auto;
+        width: 1333px;
+        height: 120px;
+        background-color: black;
+}
+
+
+
+
+
+.leftbar {
+    display: flex;
+    justify-content: left;
+    
+}
+
+/* conteudo */
+.leftbar .container .header .h1 {
+    display: flex;
+    justify-content: center;
+}
+/* texto introdutorio */
+.leftbar .container .header .introducao {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+.leftbar .container {
+    display: flex;
+    border: solid 3px green;
+
+    
+    
+}
