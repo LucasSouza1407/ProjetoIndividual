@@ -13,7 +13,7 @@
     font-size: 30px;
 }
 
-.formulario {
+.caixa_formulario {
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -21,7 +21,7 @@
     
 }
 
-.formulario button {
+.caixa_formulario button {
     margin-top: 10px;
     background: #e1374e;
     color: #fff;
@@ -33,7 +33,7 @@
 }
     
 
-.formulario input {
+.caixa_formulario input {
     padding: 10px 15px;
     text-align: center;
     border: 2px solid blue;
@@ -84,4 +84,15 @@
 .header .container {
     display: flex;
 
+}
+
+.header .container .caixa_formulario {
+    background: white;
+    width: 400px;
+    height: 270px;
+    color: palevioletred; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
 }
