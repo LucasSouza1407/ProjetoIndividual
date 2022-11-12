@@ -1,5 +1,7 @@
 body {
     background-color: rgb(1, 124, 114);
+    margin: 0;
+    padding: 0;
 }
 
 .header .container {
@@ -38,6 +40,14 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
 }
+.navbar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #e3b062;
+  }
 
 .social .container .boxes {
     display: flex;

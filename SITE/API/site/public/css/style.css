@@ -1,33 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  background-color: rgb(1, 124, 114);
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
-
-.header {
-  border-bottom: 3px solid #32b9cd;
-}
 
 .header .container {
+  display: flex;
+  justify-items: auto;
+  width: 100%;
+  height: 100px;
+  /* position: fixed; */
+  /* background-color: rgb(17, 63, 49); */
+  top: 0;
+  left: 0;
   justify-content: space-between;
+  color: black;
+  list-style: none;
+  align-items: center;
+  border-bottom: solid 3px white;
 }
 
-.header a {
-  text-decoration: none;
-  color: #e3b062;
+.header .container .titulo{
+  display: flex;
+  margin-left: 60px;
+  font-variant: small-caps;
+  color: aliceblue;
 }
 
-.agora {
-  font-weight: 800;
+.header .container .titulo{
+  display: flex;
+  margin-left: 60px;
+  font-variant: small-caps;
+  color: aliceblue;
+}
+.header .container .navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  height: 30px;
+  width: 300px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
 }
 
 .navbar {
@@ -46,14 +63,21 @@ body {
   font-weight: 500;
 }
 
+ 
+/* .containertamanho-conteudo .cardmedio .formulario {
+  display: flex;
+  border: solid 3px #fff;
+  right: 0;
+  width: 50%;
+} */
 
 /* BANNER */
 
 .banner {
+  display: flex;
   height: fit-content;
   padding: 40px 0;
   color: white;
-  background-image: url(".././assets/imgs/bg-jelly-fish-para_outras_pags.png");
   background-size: cover;
 }
 
@@ -62,10 +86,6 @@ body {
   font-size: 36px;
   justify-content: center;
   align-items: center;
-}
-
-.tamanho-conteudo { 
-  height: fit-content !important;
 }
 
 .banner p {
@@ -80,63 +100,6 @@ body {
   font-weight: 800;
 }
 
-/* missao visao valores */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
-}
-
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.box {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* FOOTER */
-
-.footer {
-  background-color: #32b9cd;
-  height: 150px;
-  color: #fff;
-  display: flex;
-  font-size: 15px;
-}
-
-.footer .container {
-  justify-content: center;
-  text-align: center;
-}
-
-.footer .container .version {
-  font-size: 12px;
-}
 
 
 /* LOGIN */
