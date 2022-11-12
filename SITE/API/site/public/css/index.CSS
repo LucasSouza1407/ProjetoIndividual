@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100px;
     /* position: fixed; */
-    background-color: rgb(17, 63, 49);
+    /* background-color: rgb(17, 63, 49); */
     top: 0;
     left: 0;
     justify-content: space-between;
@@ -26,7 +26,8 @@ body {
 .header .container .titulo{
     display: flex;
     margin-left: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    color: aliceblue;
 }
 .header .container .navbar {
     display: flex;
@@ -35,7 +36,7 @@ body {
     height: 30px;
     width: 300px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    padding: 0;
 }
 
 .social .container .boxes {
@@ -49,9 +50,62 @@ body {
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: solid 3px black;
+    border: solid 1px rgb(129, 173, 132);
+    border-radius: 10px;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    
+    /* 
+    position: relative;
+    overflow: hidden;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    transition: .5s ease-in-out; */
 }
 
 .container .boxes {
     display: flex;
+}
+
+
+.social .container .boxes .box{
+    position: relative;
+}
+
+.social .container .boxes .box img {
+    position: relative;
+    z-index: 1;
+    transition: .2s ease-in-out;
+    /*width: 100%;*/
+}
+.social .container .boxes .box p {
+    visibility: hidden;
+    position: absolute;
+    transition: .2s ease-in-out;
+    left: 15%;
+    top: 50%;
+    margin: 0;
+}
+
+.social .container .boxes .box span {
+    display: flex;
+    top: 0;
+    left: 25%;
+}
+
+.social .container .boxes .box:hover p {
+    visibility: visible;
+}
+
+.social .container .boxes .box:hover img {
+    opacity: 0;
+}
+
+.caixa {
+    display: flex;
+    opacity: 0;
+    width: 300px;
 }
