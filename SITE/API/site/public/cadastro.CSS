@@ -91,3 +91,31 @@ body {
     justify-content: center;
 }
 
+.container {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.corpo .container {
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.container .card {
+    display: flex;
+    margin: 45px;
+}
+
+.corpo .container .card {
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.corpo .container .card .tipo_campo {
+    opacity: 100% ; 
+}
