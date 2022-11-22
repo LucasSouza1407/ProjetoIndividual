@@ -100,7 +100,10 @@ body {
 .corpo .container {
     display: flex;
     justify-content: flex-end;
-    
+    background-image: url('./img/Percy-Jackson-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(75%);
     
 }
 
@@ -113,7 +116,7 @@ body {
     background-image: url('');
     background-size: cover;
     background-repeat: no-repeat;
-    
+    filter: brightness(120%);
 }
 
 .corpo .container .card .tipo_campo {
