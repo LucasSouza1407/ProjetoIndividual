@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap');
 
 /* body {
   margin: 0;
@@ -142,12 +143,12 @@
 /* LOGIN */
 
 .banner .container .card {
-  background-color: #e5e5e5;
+  background-color: transparent;
   height: fit-content;
   width: 400px;
   display: flex;
   flex-direction: column;
-  color: rgb(255, 251, 22);
+  color: rgb(255, 255, 255);
   align-items: center;
   border-radius: 4px; 
 }
@@ -223,7 +224,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #5454d6;
   width: 120px;
   align-self: center;
   margin-top: 5px;

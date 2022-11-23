@@ -25,7 +25,7 @@
 
     <div class="header">
         <div class="container">
-            <img  class="img" src="./img/simboloPercy.png" alt="">
+            <img  class="img" src="./img/Simbolo-Percy semfundo.png" alt="">
             <h1 class="titulo">Percy Jackson</h1>
             <ul class="navbar">
                 <a style="text-decoration: none; color: currentColor; font-weight: bold;" href="./index.html">Inicial</a>
@@ -81,12 +81,7 @@
     <!--footer inicio-->
     <div class="footer">
         <div class="container">
-            <h4>Feito com amor por um aluno &hearts; SPTech &copy; 2022
-                <br>
-                <span class="version">
-                    v1.0.0
-                </span>
-            </h4>
+            <h4>Feito com amor por um leitor/fã paras outros leitores 2022</h4>
         </div>
     </div>
     <!--footer fim-->
@@ -99,7 +94,7 @@
 
 
     function entrar() {
-        aguardar();
+        //aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
@@ -107,11 +102,11 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
+            //finalizarAguardar();
             return false;
         }
         else {
-            setInterval(sumirMensagem, 5000)
+            //setInterval(sumirMensagem, 5000)
         }
 
         console.log("FORM LOGIN: ", emailVar);
@@ -152,7 +147,7 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
+                   // finalizarAguardar(texto);
                 });
             }
 
@@ -163,8 +158,8 @@
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 
 </script>
