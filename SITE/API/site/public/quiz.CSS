@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap');
 
+
+
 body {
     background-color: black;
     color: white;
     font-family: 'Cormorant';
 }   
+
+.titulo {
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: bold;
+}
 
 .header {
     top: 0;
@@ -25,7 +33,7 @@ body {
 }
 
 .header .container .titulo {
-        display: flex;
+    display: flex;
         justify-items: auto;
         height: 70px;
         background-color: black;
@@ -51,14 +59,25 @@ body {
     width: 100px;
 }
 
+
+.principal{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
 .principal .container {
     /* color: rgb(7, 156, 7); */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: bold;
     font-size: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 0px;
+    
 }
 
 .principal .container .continuidade {
@@ -76,15 +95,23 @@ body {
 
 .container .conteudo  {
     display: flex;
-    margin: 100px;
+    margin: 30px;
     flex-direction: column;
     flex-wrap: wrap;
+    border-top: solid 3px white;
+    
+}
+
+.principal .container img {
+    display: flex;
+    width: 500px;
+    margin: 50px;
 }
 
 .container .conteudo img {
     display: flex;
-    width: 100px;
-    margin: 25px;
+    width: 150px;
+    margin: 50px;
 }
 
 .footer {
@@ -99,34 +126,10 @@ body {
     font-weight: bold;
 }
 
-.container {
-    display: flex;
-    justify-content: flex-end;
-    
-}
-
-.corpo .container {
-    display: flex;
-    justify-content: flex-end;
-    background-image: url('./img/Percy-Jackson-banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(75%);
-    
-}
-
-.container .card {
-    display: flex;
-    margin: 45px;
-}
-
-.corpo .container .card {
-    background-image: url('');
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(120%);
-}
-
-.corpo .container .card .tipo_campo {
-    opacity: 100% ; 
+.texto {
+  width: 500px;    
+  text-align: center;
+  font-family: 'Cormorant';
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -3,6 +3,7 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Cormorant';
 }   
 
 .header {
@@ -18,21 +19,24 @@ body {
     display: flex;
     width: 450px;
     justify-content: space-around;
-    color: #e3b062;
+    color: #5454d6;
     list-style: none;
     align-items: center;
+    font-size: 20px;
 }
 
 .header .container .titulo {
     display: flex;
-        justify-items: auto;
-        height: 70px;
-        background-color: black;
-        top: 0;
-        left: 0;
-        justify-content: space-between;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-left: 300px;
+    justify-items: auto;
+    height: 70px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    font-family: 'Cormorant';
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 360px;
 }
 
 .header .container {
@@ -67,13 +71,18 @@ body {
 .corpo .container {
     display: flex;
     justify-content: flex-end;
-    
+    background-image: url('./img/Raio2-banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(75%);
+    height: 500px;
     
 }
 
 .container .card {
     display: flex;
     margin: 45px;
+    
 }
 
 .corpo .container .card {
