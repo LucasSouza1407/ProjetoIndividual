@@ -154,6 +154,7 @@
             </div>
         </div>
     </div>
+    <div id="msg_pontuacao"></div>
 
     <!--footer inicio-->
     <div class="footer">
@@ -283,7 +284,7 @@
 
     function resultado() {
 
-        if (pontos == 10) {
+        if (pontos >= 10 ) {
             divresult.innerHTML = `Pontos ${(pontos).toFixed(0)} !!! <br>
                                    Parábens, você leu e entendeu todos os personagens e suas tramas !!`
         } else if (pontos >= 5 && pontos <= 9) {
@@ -376,14 +377,12 @@
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                //  cardErro.style.display = "block";
+                resposta.json().then(json => {
+                    for (let index = 0; index < 10; index++) {
+                        msg_pontuacao.innerHTML += `${json[index].nome},${json[index].pontos} <br>`;
+                    }
 
-                // mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-                //  setTimeout(() => {
-                //      window.location = "login.html";
-                //  }, "2000")
-                alert(`Pontuação listada com sucesso !!`)
-
+                });
 
 
             } else {
