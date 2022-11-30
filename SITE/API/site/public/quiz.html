@@ -40,6 +40,9 @@
                     <a style="text-decoration: none; color: currentColor; font-weight: bold;"
                         href="./cadastro.html">Cadastro</a>
                 </li>
+                <li>
+                    <button onclick="limparSessao()">SAIR</button>
+                </li>
             </ul>
         </div>
     </div>
@@ -154,9 +157,6 @@
             </div>
         </div>
     </div>
-    <div class="questao">
-    <div class="pergunta" id="msg_pontuacao"></div>
-    </div>
 
     <!--footer inicio-->
     <div class="footer">
@@ -178,7 +178,6 @@
 
 
     function resposta() {
-        msg_pontuacao.style.display = 'none';
         for (let index = 1; index <= 7; index++) {
 
 
@@ -297,15 +296,9 @@
                                    Não foi tão bem, recomendamos a leituras dos livros que estão expostos em nosso site !!`
         }
 
-        divresult.innerHTML += `<button onclick="ranking()"></button>`
         cadastrar();
-        Listar();
+        setTimeout(() => {Listar();},2000); 
 
-    }
-
-    function ranking() {
-        msg_pontuacao.style.display = 'block';
-        msg_pontuacao.innerHTML += `${json[index].nome},${json[index].pontos} <br>`;
     }
 
 
@@ -321,10 +314,13 @@
         // var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
         var nome = sessionStorage.NOME_USUARIO;
+        var id = sessionStorage.ID_USUARIO;
         var pontosbanco = pontos;
+        var idquiz = 1;
 
         alert(nome);
         alert(pontosbanco);
+        alert(id);
 
         if (nome == "" || pontos == "") {
             // cardErro.style.display = "block"
@@ -345,7 +341,9 @@
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nome,
-                pontosServer: pontosbanco
+                pontosServer: pontosbanco,
+                IDServer: id,
+                IDquiz: idquiz
             })
         }).then(function (resposta) {
 
@@ -374,6 +372,8 @@
         return false;
     }
 
+
+     
     function Listar() {
         fetch("/quiz/listar", {
             method: "GET",
@@ -386,11 +386,16 @@
 
             if (resposta.ok) {
                 resposta.json().then(json => {
-                    for (let index = 0; index < 10; index++) {
-                        ranking();
+                
+                      questao_resposta.innerHTML = ``;
+                    
+                      for (let index = 0; index < 10; index++) {
+                     
+
+                     questao_resposta.innerHTML += `<span style="color: black;">${json[index].nome} - ${json[index].pontos}</span> <br>` 
                     }
 
-                });
+            });
 
 
             } else {
@@ -404,4 +409,8 @@
 
         return false;
     }
+
+    
+
+   
 </script>

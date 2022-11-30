@@ -64,7 +64,9 @@ function entrar(req, res) {
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     nome = req.body.nomeServer;
+    var idbanco = req.body.IDServer;
     var pontos = req.body.pontosServer;
+    var idquiz = 1;
     // var senha = req.body.senhaServer;
 
     // Faça as validações dos valores
@@ -72,10 +74,12 @@ function cadastrar(req, res) {
         res.status(400).send("Seu nome está undefined!");
     } else if (pontos == undefined) {
         res.status(400).send("Sua pontuação está undefined!");
+    } else if (idbanco == undefined) {
+        res.status(400).send("Seu IdBanco está undefined!");
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo quizModel.js
-        quizModel.cadastrarP(nome, pontos)
+        quizModel.cadastrarP(nome, pontos, idbanco, idquiz)
             .then(
                 function (resultado) {
                     res.json(resultado);
