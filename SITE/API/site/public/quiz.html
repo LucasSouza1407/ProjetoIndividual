@@ -318,9 +318,6 @@
         var pontosbanco = pontos;
         var idquiz = 1;
 
-        alert(nome);
-        alert(pontosbanco);
-        alert(id);
 
         if (nome == "" || pontos == "") {
             // cardErro.style.display = "block"
@@ -356,13 +353,13 @@
                 //  setTimeout(() => {
                 //      window.location = "login.html";
                 //  }, "2000")
-                alert(`Pontuação cadastrada com sucesso !!`)
+                console.log(`Pontuação cadastrada com sucesso !!`)
 
 
 
             } else {
                 //  throw ("Houve um erro ao tentar realizar o cadastro!");
-                alert(`Pontuação não foi cadastrada com sucesso !!`)
+                console.log(`Pontuação não foi cadastrada com sucesso !!`)
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
