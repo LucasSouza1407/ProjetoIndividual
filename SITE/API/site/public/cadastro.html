@@ -52,7 +52,7 @@
         <div class="corpo">
             <div class="container tamanho-conteudo">
                 <div class="card medio">
-                    <h2>Bem-vindo!</h2>
+                    <h2 class="bemvindo">Bem-vindo!</h2>
                     <div class="formulario">
 
                         <!--
@@ -61,7 +61,7 @@
                         -->
 
                         <span class="tipo_campo">Nome:</span>
-                        <input id="nome_input" type="text" placeholder="Seu nome">
+                        <input id="nome_input" type="text" placeholder="Seu nome" autofocus>
 
                         <span class="tipo_campo">E-mail:</span>
                         <input id="email_input" type="text" placeholder="meuemail@provedor.com">
@@ -112,17 +112,15 @@
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
         
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || senhaVar != confirmacaoSenhaVar) {
            // cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            alert('varifique todos os campos!')
 
          //   finalizarAguardar();
             return false;
         }
         else {
        //     setInterval(sumirMensagem, 5000)
-        }
-
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -152,7 +150,7 @@
                // limparFormulario();
                 //finalizarAguardar();
             } else {
-                throw ("Houve um erro ao tentar realizar o cadastro!");
+                alert ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
@@ -165,5 +163,8 @@
     // function sumirMensagem() {
     //     cardErro.style.display = "none"
     // }
+        }
+
+       
 
 </script>

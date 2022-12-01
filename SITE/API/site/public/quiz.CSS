@@ -170,16 +170,22 @@ body {
     background-color: rgb(87, 97, 105);
 }
 
-.botaosair {
-    border: 0;
-    border-radius: 5px;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 10px 15px;
-    background-color: rgb(87, 97, 105);
-}
+
+    
 
 .questao {
     display: flex;
     margin-left: 3px;
 }
+
+.header .container button {
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: rgb(0, 0, 0);
+    color: #5454d6;
+    font-family: 'Cormorant';
+}
+

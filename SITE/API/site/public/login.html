@@ -54,10 +54,10 @@
                 <div class="formulario">
 
 
-                    <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="Login">
+                    <span class="tipo_campo2">E-mail:</span>
+                    <input id="email_input" type="text" placeholder="Login" autofocus>
 
-                    <span class="tipo_campo">Senha:</span>
+                    <span class="tipo_campo2">Senha:</span>
                     <input id="senha_input" type="password" placeholder="******">
 
                     <button class="btn" onclick="entrar()">Entrar</button>
@@ -142,7 +142,8 @@
 
             } else {
 
-                console.log("Houve um erro ao tentar realizar o login!");
+                alert("Houve um erro ao tentar realizar o login!");
+                alert("Verifique o email e senha!");
 
                 resposta.text().then(texto => {
                     console.error(texto);

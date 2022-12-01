@@ -34,10 +34,13 @@ foreign key fkquiz (fkquiz) references quiz (idquiz)
 
 INSERT INTO quiz (nomequiz) VALUES 
 ('Defeitos Mortais');
-use percyjackson;
+
+
 select * from usuario ;
+
 select * from pontuacao;
+
 select * from quiz;
 
-INSERT INTO pontuacao (nome, pontos, fkusuario, fkquiz) VALUES ('lucas', 10, 1, 1);
+
 
